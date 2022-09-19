@@ -1,0 +1,18 @@
+
+@mixin centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin centrar-justificar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin radius-shadow {
+    border: $borde;
+    box-shadow: $shadow-hov;
+    border-radius: 10px;
+}

@@ -1,0 +1,22 @@
+.boton{
+    border: $borde;
+    color: #183153;
+    border-radius: 8px;
+    padding: 10px 15px;
+    transition: ease-in-out 0.1s;
+    &:hover{
+        transform: translateY(-1px);
+        box-shadow: $shadow-hov;
+    }
+    &:focus{
+        transform: translateY(1px);
+    }
+}
+
+.btn-color{
+    background-color: $amarillo;
+}
+
+.btn-blanco{
+    background-color: $blanco;
+}

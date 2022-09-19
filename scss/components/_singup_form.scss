@@ -1,0 +1,9 @@
+.main-singup{
+    @extend .main-singin;
+    overflow: scroll;
+    #formularioRegistro{
+        .btn-color{
+            background-color: $amarillo;
+        }
+    }
+}

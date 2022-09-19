@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body id="home">
+
+        <a href="../index.html" class="boton" id="borraTodo">cerrar sesion</a>
+
+        <!-- MAIN -->
+        <main class="d-flex flex-column p-0 justify-content-evenly align-items-center">
+
+            <div class="container-fluid">
+                <div class="container banner-puntaje d-flex justify-content-center align-items-center">
+                    <h2 id="nombre-usuario"></h2>
+                    <h2 id="contador-puntos"></h2>
+                    <h2 id="texto-puntos">puntos</h2>
+                </div>
+            </div>
+
+            <!-- ruleta -->
+            <div class="main-container">
+                <div id="circle">
+                    <div id="hacerGirar" class="inner-circle">
+                        <img src="../img/iconos/001-football.png" alt="DEPORTES" class="icon icon1">
+                        <img src="../img/iconos/004-historia.png" alt="HISTORIA" class="icon icon2">
+                        <img src="../img/iconos/005-geografia.png" alt="GEOGRAFIA" class="icon icon3">
+                        <img src="../img/iconos/002-matraz.png" alt="CIENCIA" class="icon icon4">
+                    </div>
+                    <div id="jugar" class="btn-spin"><p>JUGAR</p></div>
+                    <div class="marcador"></div>
+                </div>
+            </div>
+                
+            <!-- pop up preguntas -->
+            <div class="main-container" id="popup-container">
+                <div class="pop-container">
+                    <div class="pregunta-container">
+                        <div id="pregunta-inner">
+                            <h3 id="pregunta"></h3>
+                        </div>
+                    </div>
+                    <div id="respuesta-container">
+                        <div id="no-tocar">
+                            <a id="cerrarPantalla" href="./jugar.html"><img src="../img/iconos/error.png" alt="cerrar pantalla"></a>
+                        </div>
+                                                <!-- Respuestas - Creado con javascript -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../js/jugar.js"></script> 
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+       
+</html>
